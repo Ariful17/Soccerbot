@@ -1,7 +1,7 @@
 /*  Arif 1703026, 23rd December, 2021
  *  This is a sample code for simple operation of a footbot driven by a pair of BTS7960 modules
  *  Necessary comments have been added for a better understanding
- *  One may need to alter/change their motor connection for desired direction of rotation,
+ *  One may need to alter/change their motor connection(s) for desired direction of rotation,
  *  Here it is assumed that right side motors are controlled by arduino pin 5 and 6
     and left side motors are controlled by arduino pin 9 and 10, these are PWM pins
  *  The bluetooth module is connected to arduino pin 0 and 1 for serial communication
@@ -42,7 +42,7 @@ if(Serial.available()>0)  //checks if any serial port is connected and available
     //set your value in the range of 0-255 based on desired speed(0 > full stop, 255 > full rpm)
   }
   
-    if((letter=='B')||(letter=='H')||(letter=='J')  //if 'B'/'J'/'H' comes from mobile(backward/left backward/right backward
+    if((letter=='B')||(letter=='H')||(letter=='J'))  //if 'B'/'J'/'H' comes from mobile(backward/left backward/right backward
   {
     //goes backward
     analogWrite(9, 0);   //zero forward drive for left side motors
@@ -62,7 +62,7 @@ if(Serial.available()>0)  //checks if any serial port is connected and available
     //set your value in the range of 0-255 based on desired speed(0 > full stop, 255 > full rpm)
   }
   
-    if(letter=='L')||(letter=='G'))  //if 'L'/'G' comes from mobile(left/forward left)
+    if((letter=='L')||(letter=='G'))  //if 'L'/'G' comes from mobile(left/forward left)
   {
     //turns left side
     analogWrite(9, 0);    //zero forward drive for left side motors
