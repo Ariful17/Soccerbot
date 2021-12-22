@@ -1,2 +1,3 @@
 # Soccerbot
-A sample code for 4 wheelers bot using Arduino Uno, BTS7960 motor driver, HC-05 Bluetooth module
+This a beginner friendly Arduino sketch for making a 4 wheeler (soccerbot)
+if you need a sample 3d design of it- https://grabcad.com/library/4-wheeler-soccerbot-1
