@@ -15,16 +15,16 @@ pinMode(2,OUTPUT);   //for first BTS L_EN/R_EN pin
 pinMode(3,OUTPUT);   //for first BTS L_EN/R_EN pin
 pinMode(5,OUTPUT);   //for first BTS L_PWM/R_PWM pin
 pinMode(6,OUTPUT);   //for first BTS L_PWM/R_PWM pin
-pinMode(7,OUTPUT);   //for second BTS L_EN/R_EN pin
-pinMode(8,OUTPUT);   //for second BTS L_EN/R_EN pin
+pinMode(12,OUTPUT);   //for second BTS L_EN/R_EN pin
+pinMode(13,OUTPUT);   //for second BTS L_EN/R_EN pin
 pinMode(9,OUTPUT);   //for second BTS L_PWM/R_PWM pin
 pinMode(10,OUTPUT);  //for second BTS L_PWM/R_PWM pin
 }
 void loop() {
 digitalWrite(2, HIGH);   //these are all R_EN and L_EN pins(2,3,7,8)
 digitalWrite(3, HIGH);
-digitalWrite(7, HIGH);
-digitalWrite(8, HIGH);
+digitalWrite(12, HIGH);
+digitalWrite(13, HIGH);
 
 if(Serial.available()>0)  //checks if any serial port is connected and available
 {
