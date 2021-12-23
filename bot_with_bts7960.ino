@@ -21,7 +21,7 @@ pinMode(9,OUTPUT);   //for second BTS L_PWM/R_PWM pin
 pinMode(10,OUTPUT);  //for second BTS L_PWM/R_PWM pin
 }
 void loop() {
-digitalWrite(2, HIGH);   //these are all R_EN and L_EN pins(2,3,7,8)
+digitalWrite(2, HIGH);   //these are all R_EN and L_EN pins(2,3,12,13)
 digitalWrite(3, HIGH);
 digitalWrite(12, HIGH);
 digitalWrite(13, HIGH);
